@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tadie's Graceful Delights - Home</title>
+  <meta name="description" content="Elegant homemade pastries and delights from Tadie's Graceful Delights">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+<header>
+   
+  <div class="logo-container">
+    <video autoplay muted loop playsinline>
+      <source src="C:\Users\Tadiwa\Tadies Graceful Delights\assets\videos\Beige and Black Vintage Retro Minimalist Illustrated Bakery Logo .mp4" type="video/mp4">
+      <img src="C:\Users\Tadiwa\Tadies Graceful Delights\assets\images\Beige and Black Vintage Retro Minimalist Illustrated Bakery Logo .png" alt="Tadie's Logo">
+    </video>
+  </div>
+  <h1 class="brand-title">Tadie's Graceful Delights</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+  <section class="hero">
+    <h1 style="font-family: 'Dancing Script', cursive; font-size: 3em;">Tadie's Graceful Delights</h1>
+    <p style="font-size: 1.5em;">Where Elegance Meets Indulgence</p>
+    <a href="contact.html" class="cta-button">Order Now</a>
+  </section>
+
+  <section class="about-content">
+  <h2>Our Signature Delights</h2>
+  <p>Handcrafted with premium ingredients and a touch of elegance.</p>
+  
+  <div class="product-gallery">
+    <!-- Chocolate Cake -->
+    <div class="product-card">
+      <img src="https://bluebowlrecipes.com/wp-content/uploads/2023/08/chocolate-truffle-cake-8844.jpg" 
+           alt="Decadent Chocolate Cake">
+      <h3>Decadent Chocolate Cake</h3>
+      <p>Rich layers with velvety ganache frosting</p>
+    </div>
+    
+    <!-- Cupcakes -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+           alt="Gourmet Cupcakes">
+      <h3>Gourmet Cupcakes</h3>
+      <p>Moist cakes with artistic buttercream swirls</p>
+    </div>
+    
+    <!-- Truffles -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1602351447937-745cb720612f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+           alt="Chocolate Truffles">
+      <h3>Chocolate Truffles</h3>
+      <p>Hand-rolled in cocoa or delicate toppings</p>
+    </div>
+    
+    <!-- Brownies -->
+    <div class="product-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ45nloMN2-q_w9rYBR3Ti3Y5wNPBgpnYv6-ua3X65g3T1tfvMKFkgA09PGbut3l_5jjQM&usqp=CAU" 
+           alt="Fudgy Brownies">
+      <h3>Fudgy Brownies</h3>
+      <p>Walnut-studded with crackly tops</p>
+    </div>
+  </div>
+  
+  <a href="contact.html" class="cta-button">Custom Order Inquiry</a>
+</section>
+  <footer>
+    <p>© 2025 Tadie's Graceful Delights. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const currentPage = location.pathname.split('/').pop();
+      const links = document.querySelectorAll('nav a');
+      
+      links.forEach(link => {
+        if (link.getAttribute('href') === currentPage) {
+          link.classList.add('current-page');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

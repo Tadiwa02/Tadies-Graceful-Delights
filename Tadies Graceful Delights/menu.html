@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu - Tadie's Graceful Delights</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Dancing+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+.menu-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* 👈 THIS LINE IS IMPORTANT */
+  padding: 0.4rem 0;
+  margin: 0;
+  border-bottom: 1px dashed #eee;
+  max-width: 600px;              /* controls how wide it can grow */
+  margin: 0 auto;                /* centers it horizontally */
+  text-align: left;    
+}
+
+.classic-flavors-heading {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700; /* Bold */
+  font-size: 1rem;
+  color: #5a3d5c; /* Your dark purple */
+  text-align: center;
+  margin: 1.5rem 0;
+  letter-spacing: 1px;
+}
+
+</style>
+
+</head>
+<body>
+
+  <header>
+   
+  <div class="logo-container">
+    <video autoplay muted loop playsinline>
+      <source src="C:\Users\Tadiwa\Tadies Graceful Delights\assets\videos\Beige and Black Vintage Retro Minimalist Illustrated Bakery Logo .mp4" type="video/mp4">
+      <img src="C:\Users\Tadiwa\Tadies Graceful Delights\assets\images\Beige and Black Vintage Retro Minimalist Illustrated Bakery Logo .png" alt="Tadie's Logo">
+    </video>
+  </div>
+  <h1 class="brand-title">Tadie's Graceful Delights</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+    <h2 class="menu-subtitle" style="text-align: center;">Our Everyday Delights</h2>
+    <div class="menu-grid">
+      <!-- Cakes -->
+      <div class="menu-group">
+        <h3 class="menu-group-title" style="text-align: center;">Cakes</h3>
+
+        <div class="menu-card">
+          <p class="classic-flavors-heading">Classic Flavours</p>
+        </div>
+        <div class="menu-card">
+          <p>Small (7")</p>
+          <span class="price">$25</span>
+        </div>
+        <div class="menu-card">
+          <p>Medium (8")</p>
+          <span class="price">$35</span>
+        </div>
+        <div class="menu-card">
+          <p>Large (9")</p>
+          <span class="price">$50</span>
+        </div>
+      </div>
+
+      <!-- Cupcakes -->
+      <div class="menu-group">
+        <h3 class="menu-group-title" style="text-align: center;">Cupcakes</h3>
+        <div class="menu-card">
+          <p>6 Regular Cupcakes</p>
+          <span class="price">$6</span>
+        </div>
+        <div class="menu-card">
+          <p>12 Regular Cupcakes</p>
+          <span class="price">$12</span>
+        </div>
+        <div class="menu-card">
+          <p>6 Premium Cupcakes(with filling)</p>
+          <span class="price">$10</span>
+        </div>
+        <div class="menu-card">
+          <p>12 Premium Cupcakes(with filling)</p>
+          <span class="price">$15</span>
+        </div>
+      </div>
+
+      <!-- Doughnuts -->
+      <div class="menu-group">
+        <h3 class="menu-group-title" style="text-align: center;">Doughnuts</h3>
+        <div class="menu-card">
+          <p>6 Doughnuts</p>
+          <span class="price">$6</span>
+        </div>
+        <div class="menu-card">
+          <p>12 Doughnuts</p>
+          <span class="price">$12</span>
+        </div>
+      </div>
+
+      <!-- Pastries -->
+      <div class="menu-group">
+        <h3 class="menu-group-title" style="text-align: center;">Pastries</h3>
+        <div class="menu-card">
+          <p>6 French Macarons</p>
+          <span class="price">$15</span>
+        </div>
+        <div class="menu-card">
+          <p>12 French Macarons</p>
+          <span class="price">$28</span>
+        </div>
+        <div class="menu-card">
+          <p>6 Chocolate Éclairs</p>
+          <span class="price">$14</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2023 Tadie's Graceful Delights</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.simple-nav a').forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('current-page');
+      }
+    });
+  </script>
+
+</body>
+</html>

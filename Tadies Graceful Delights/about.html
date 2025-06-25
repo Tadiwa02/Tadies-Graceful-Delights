@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - Tadie's Graceful Delights</title>
+  <meta name="description" content="Learn about our story and passion for creating graceful delights">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+ <header>
+   
+  <!-- Video Logo -->
+  <div class="logo-container">
+    <video autoplay muted loop playsinline>
+      <source src="C:\Users\Tadiwa\Tadies Graceful Delights\assets\videos\Beige and Black Vintage Retro Minimalist Illustrated Bakery Logo .mp4" type="video/mp4">
+      <!-- Fallback image if video doesn't load -->
+      <img src="C:\Users\Tadiwa\Tadies Graceful Delights\assets\images\Beige and Black Vintage Retro Minimalist Illustrated Bakery Logo .png" alt="Tadie's Graceful Delights Logo">
+    </video>
+  </div>
+  
+  <h1 class="brand-title">Tadie's Graceful Delights</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+  <section class="hero">
+    <h1 style="font-family: 'Dancing Script', cursive; font-size: 3em;">Our Story</h1>
+  </section>
+
+  <section class="about-content">
+    <h2>From Our Kitchen to Your Table</h2>
+    <img src="baker.jpg" alt="Our baker at work">
+    <p>Tadie's Graceful Delights began as a passion project in 2020, when our founder Tadie started creating beautiful pastries for friends and family. What began as a hobby quickly grew into a beloved local business as word spread about our exquisite flavors and elegant presentations.</p>
+    
+    <h3>Our Philosophy</h3>
+    <p>We believe in the power of homemade goodness. Each of our creations is made with the finest ingredients, attention to detail, and a whole lot of love. We specialize in turning simple moments into memorable occasions with our graceful delights.</p>
+    
+    <h3>What Makes Us Special</h3>
+<div class="special-features">
+  <p>100% homemade with premium ingredients</p>
+  <p>Custom designs for any occasion</p>
+  <p>Family recipes with a modern twist</p>
+  <p>Eco-friendly packaging</p>
+</div>
+    
+    <a href="contact.html" class="cta-button">Get in Touch</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Tadie's Graceful Delights. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const currentPage = location.pathname.split('/').pop();
+      const links = document.querySelectorAll('nav a');
+      
+      links.forEach(link => {
+        if (link.getAttribute('href') === currentPage) {
+          link.classList.add('current-page');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
